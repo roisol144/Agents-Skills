@@ -41,6 +41,7 @@ Run once per team. The agent interviews your team, reads your codebase, and gene
 | Name | Invoke | Description | Path | Output |
 |------|--------|-------------|------|--------|
 | api-conventions | `/api-conventions` | Interviews your team about API conventions (URLs, auth, response shapes, errors) and generates a custom enforcement skill | [skills/team-templates/api-conventions](skills/team-templates/api-conventions/) | Custom `api-conventions` SKILL.md in your project |
+| code-style-guide | `/code-style-guide` | Reads your codebase to infer style, interviews your team about naming and patterns, and generates a custom code-style enforcement skill | [skills/team-templates/code-style-guide](skills/team-templates/code-style-guide/) | Custom `code-style` SKILL.md in your project |
 
 ---
 
