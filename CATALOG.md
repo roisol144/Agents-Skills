@@ -12,7 +12,11 @@ Install once globally (`~/.claude/skills/` or global Cursor rule). Works across 
 |------|--------|-------------|------|---------------|
 | pr-description | `/pr-description` | Reviews your PR diff and CI status, rewrites the description to be accurate and reviewer-friendly | [skills/user/git/pr-description](skills/user/git/pr-description/) | git, gh |
 | commit-message | `/commit-message` | Writes a conventional commit message from your staged changes, matching your project's commit style | [skills/user/git/commit-message](skills/user/git/commit-message/) | git |
+| release-notes | `/release-notes <from> <to>` | Generates structured release notes from git history between two refs, grouped by change type | [skills/user/git/release-notes](skills/user/git/release-notes/) | git |
 | safe-to-merge | `/safe-to-merge` | Pre-merge safety check: CI status, debug artifacts, potential secrets, unresolved TODOs, test coverage | [skills/user/code-review/safe-to-merge](skills/user/code-review/safe-to-merge/) | git, gh (optional) |
+| review-pr | `/review-pr` | Structured code review of any open PR: correctness, security, test coverage, style — with prioritized comments | [skills/user/code-review/review-pr](skills/user/code-review/review-pr/) | git, gh |
+| dependency-audit | `/dependency-audit` | Scans dependencies for vulnerabilities, outdated packages, and deprecated libraries with a prioritized fix plan | [skills/user/code-review/dependency-audit](skills/user/code-review/dependency-audit/) | git, ecosystem audit tool |
+| scaffold-tests | `/scaffold-tests <target>` | Analyzes existing untested code and writes comprehensive tests matching your project's test framework and style | [skills/user/testing/scaffold-tests](skills/user/testing/scaffold-tests/) | At least one existing test file |
 
 ---
 
