@@ -4,6 +4,8 @@ A curated workshop of agent skills for software developers. Works with **Claude 
 
 > Point your agent at a skill, say "install it" — and your agent learns how to do that task, your way, every time.
 
+Browse all available skills: **[CATALOG.md](CATALOG.md)**
+
 ---
 
 ## How it works
