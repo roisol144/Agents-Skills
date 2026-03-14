@@ -24,6 +24,9 @@ Install per project (`.claude/skills/` or `.cursor/rules/`). The skill reads you
 |------|--------|-------------|------|---------------|
 | new-endpoint | `/new-endpoint <METHOD> <path> "<description>"` | Scaffolds a complete API endpoint — route, handler, validation, and tests — matching your project's conventions | [skills/project/backend/new-endpoint](skills/project/backend/new-endpoint/) | At least one existing endpoint in the project |
 | new-component | `/new-component <ComponentName> "<description>"` | Scaffolds a UI component with styles, tests, and Storybook stories, matching your component patterns | [skills/project/frontend/new-component](skills/project/frontend/new-component/) | At least one existing component in the project |
+| db-migration-checker | `/db-migration-checker` | Validates migration files for destructive ops, missing rollbacks, unsafe index creation, and transaction issues | [skills/project/backend/db-migration-checker](skills/project/backend/db-migration-checker/) | At least one migration file in the project |
+| sync-api-docs | `/sync-api-docs` | Detects drift between route/controller code and your OpenAPI spec; offers to generate missing entries | [skills/project/backend/sync-api-docs](skills/project/backend/sync-api-docs/) | An existing OpenAPI/Swagger spec file |
+| atomic-pr | `/atomic-pr` | Decomposes a large diff into a sequence of small, focused, independently-reviewable PRs with correct dependency order | [skills/project/atomic-pr](skills/project/atomic-pr/) | git, gh |
 
 ---
 
